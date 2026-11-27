@@ -17,6 +17,7 @@ class TestListNamespaces:
             "middleware",
             "node",
             "session",
+            "tool_label",
         ]
 
 

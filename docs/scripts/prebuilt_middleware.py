@@ -42,6 +42,19 @@ researcher = rt.agent_node(
 
 # --8<-- [end: tool_output_summarizer]
 
+# --8<-- [start: tool_step_labeler]
+from railtracks.prebuilt.middleware import ToolStep, ToolStepLabeler  # noqa: E402
+
+
+def describe_search(step: ToolStep) -> str:
+    """Describe the completed search for a person watching the run."""
+    return f"Searched for {step.arguments['query']}"
+
+
+labeler = ToolStepLabeler(templates={"search_notes": describe_search})
+# Attach `labeler` to an agent's `model_middleware` list.
+# --8<-- [end: tool_step_labeler]
+
 # --8<-- [start: retry]
 import railtracks as rt
 from railtracks.prebuilt.middleware import Retry

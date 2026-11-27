@@ -162,6 +162,12 @@ NAMESPACE_COLUMNS: dict[str, dict[str, ColumnSpec]] = {
         "duration_seconds": FLOAT,
         "fatal": BOOLEAN,
     },
+    "tool_label": {
+        **_PARENT_EVENT,
+        "tool_call_id": STRING,
+        "tool_name": STRING,
+        "label": STRING,
+    },
 }
 
 

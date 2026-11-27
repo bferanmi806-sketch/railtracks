@@ -19,6 +19,7 @@ from railtracks.events import (  # noqa: F401
     middleware,
     node,
     session,
+    tool_label,
 )
 from railtracks.events._base import SessionEventBase
 from railtracks.events.registry import (
@@ -56,6 +57,7 @@ class TestNamespaces:
             "middleware",
             "node",
             "session",
+            "tool_label",
         ]
 
 

@@ -16,6 +16,10 @@ from railtracks.prebuilt.middleware.timeout import Timeout
 from railtracks.prebuilt.middleware.tool_output_summarizer import (
     ToolOutputSummarizer,
 )
+from railtracks.prebuilt.middleware.tool_step_labeler import (
+    ToolStep,
+    ToolStepLabeler,
+)
 
 __all__ = [
     "ContextInjection",
@@ -28,4 +32,6 @@ __all__ = [
     "Retry",
     "Timeout",
     "ToolOutputSummarizer",
+    "ToolStep",
+    "ToolStepLabeler",
 ]

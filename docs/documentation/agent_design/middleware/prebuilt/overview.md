@@ -19,6 +19,7 @@ The **Slot** column tells you where each middleware can be attached:
 | [ConversationMemory](list/conversation_memory.md) | Node | Preserve and append multi-turn conversation history across repeated invocations automatically. |
 | [ContextInjection](list/context_injection.md) | Model | Fill `{placeholder}` templates in the prompt from the active session context. |
 | [ToolOutputSummarizer](list/tool_output_summarizer.md) | Model | Summarize oversized text tool results before they are sent back to the agent model. |
+| [ToolStepLabeler](list/tool_step_labeler.md) | Model | Record a human-readable label for each completed tool call without changing agent history. |
 
 
 ### Guardrails
